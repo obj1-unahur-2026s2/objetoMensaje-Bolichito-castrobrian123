@@ -1,43 +1,24 @@
-//probando uno dos tres
 
 object rosa {
-    var kilos = 2000;
+    method leGusta(algo) = 
+        algo.peso() <= 2000 
 }
 
 object estefania {
-    var color = naranja;
+    method leGusta(algo) = 
+        algo.color().esFuerte() 
 }
 
 object luisa {
-    var material = cuero;
+    method leGusta(algo) = 
+        algo.material().esBrillante() 
 }
 
 object juan {
-    var kilos = 1500;
-
+    method leGusta(algo) = 
+    ( not algo.color().esFuerte() ) or
+        (
+            ( algo.peso() >= 1200 ) and
+            ( algo.peso() >= 1800 )
+        )
 }
-
-//algunas objetos del ejercicio
-
-object remera {
-    var color = rojo
-    var peso = 900;
-    var material = lino
-}
-
-object pelotaParda {
-    var peso = 1300;
-}
-
-object biblioteca {
-    var peso = 8000;
-}
-
-object muñeco {
-    var color = celeste
-    var material = vidrio;
-}
-
-object placa {
-    
-} 
