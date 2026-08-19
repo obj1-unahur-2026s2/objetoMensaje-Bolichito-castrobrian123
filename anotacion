@@ -1,0 +1,23 @@
+
+object pepita {
+    var energy = 100
+    var energiaInicial = 5
+
+    //consulta
+
+    //method energia() = energiaInicial
+
+    method energia () energy
+
+    method energia2(){
+        return energy
+    }
+
+    //indicacion
+    method vola(minutes) {
+        energy = energy - minutes * 3
+    }
+}
+
+//en consola
+pepita.energia()
